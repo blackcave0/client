@@ -8,7 +8,7 @@ import {
   HStack,
   useColorModeValue,
 } from '@chakra-ui/react';
-import { FaGithub, FaHeart } from 'react-icons/fa';
+import { FaGithub, FaHeart, FaInstagram, FaMedium } from 'react-icons/fa';
 
 function Footer() {
   const bgColor = useColorModeValue('dark.200', 'dark.300');
@@ -26,16 +26,22 @@ function Footer() {
         <HStack spacing={2}>
           <Text>Made with</Text>
           <Icon as={FaHeart} color="red.400" />
-          <Text>by Your Name</Text>
+          <Text>Daskh</Text>
         </HStack>
         <Stack direction="row" spacing={6}>
-          <Link href="#" isExternal>
-            About
+          <Link href="https://www.instagram.com/_capricious._.ax" isExternal>
+            <HStack>
+              <Icon as={FaInstagram} />
+              <Text>Instagram</Text>
+            </HStack>
           </Link>
-          <Link href="#" isExternal>
-            Features
+          <Link href="https://capricious-ax.medium.com/" isExternal>
+            <HStack>
+              <Icon as={FaMedium} />
+              <Text>Blog</Text>
+            </HStack>
           </Link>
-          <Link href="https://github.com/yourusername" isExternal>
+          <Link href="https://github.com/blackcave0" isExternal>
             <HStack>
               <Icon as={FaGithub} />
               <Text>GitHub</Text>
